@@ -1,8 +1,4 @@
-"use strict";
-// app.js 
-
-// we need the http module
-const http = require("http"); //  *see note below
+const http = require("http"); // we need the http module
 
 const port = 3000;  // port we listen for requests on
 
@@ -18,9 +14,7 @@ const server = http.createServer(function (req, res) {
 
   // Set the response HTTP header with HTTP status OK
 	res.statusCode = 200;
-
-	// set Content type header to text/html (so we get 
-  // a response with text/html code)
+  // set Content type header to text/html (so we get a response with text/html code)
   res.setHeader("Content-Type", "text/html");
 
   // Send the response body "Hello World"
